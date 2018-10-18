@@ -1,0 +1,8 @@
+[Unit]
+After=networking.service
+
+[Service]
+ExecStart=/usr/local/bin/update-route53-record.sh
+
+[Install]
+WantedBy=default.target
